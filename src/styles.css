@@ -22,7 +22,14 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background:
     radial-gradient(circle at top left, rgba(34, 197, 94, 0.16), transparent 25rem),
     radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.12), transparent 30rem),
@@ -45,7 +52,10 @@ button {
   color: #020617;
   font-weight: 850;
   cursor: pointer;
-  transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease,
+    background 0.15s ease;
 }
 
 button:hover {
@@ -131,6 +141,10 @@ h4 {
   color: var(--muted);
 }
 
+/* =========================================================
+   APP SHELL / HEADER
+========================================================= */
+
 .app-shell {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
@@ -156,6 +170,10 @@ h4 {
   color: var(--text);
   border: 1px solid var(--border);
 }
+
+/* =========================================================
+   LOGIN
+========================================================= */
 
 .loading,
 .login-page {
@@ -190,7 +208,9 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.14), transparent 20rem), rgba(2, 6, 23, 0.25);
+  background:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.14), transparent 20rem),
+    rgba(2, 6, 23, 0.25);
 }
 
 .brand-title-row {
@@ -329,6 +349,10 @@ h4 {
   margin: 0.8rem 0 0;
 }
 
+/* =========================================================
+   MIS VIAJES
+========================================================= */
+
 .trips-page {
   display: grid;
   grid-template-columns: minmax(320px, 0.95fr) minmax(380px, 1.05fr);
@@ -353,7 +377,10 @@ h4 {
   min-height: 190px;
   border-radius: 1.25rem;
   padding: 1.05rem 1.15rem;
-  background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.15), transparent 15rem), linear-gradient(135deg, rgba(20, 184, 166, 0.14), rgba(56, 189, 248, 0.08)), rgba(15, 23, 42, 0.82);
+  background:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.15), transparent 15rem),
+    linear-gradient(135deg, rgba(20, 184, 166, 0.14), rgba(56, 189, 248, 0.08)),
+    rgba(15, 23, 42, 0.82);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -422,28 +449,22 @@ h4 {
   font-weight: 900;
 }
 
-.trip-form-grid,
-.quest-form-grid {
-  display: grid;
-  gap: 0.6rem;
-}
-
 .trip-form-grid {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
 }
 
 .trip-form-grid label,
 .quest-form-grid label,
-.quest-notes-field,
-.quest-log-toolbar label {
+.quest-notes-field {
   display: grid;
   gap: 0.25rem;
 }
 
 .trip-form-grid label span,
 .quest-form-grid label span,
-.quest-notes-field span,
-.quest-log-toolbar label span {
+.quest-notes-field span {
   color: rgba(203, 213, 225, 0.78);
   font-size: 0.72rem;
   font-weight: 800;
@@ -454,8 +475,7 @@ h4 {
 .quest-form-grid input,
 .quest-form-grid select,
 .quest-notes-field textarea,
-.quest-log-toolbar input,
-.quest-log-toolbar select {
+.quest-log-header select {
   min-height: 39px;
   padding: 0.53rem 0.65rem;
   border-radius: 0.7rem;
@@ -508,7 +528,9 @@ h4 {
   border-radius: 1rem;
   padding: 0.75rem;
   color: var(--text);
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.07), transparent), rgba(2, 6, 23, 0.28);
+  background:
+    linear-gradient(135deg, rgba(34, 197, 94, 0.07), transparent),
+    rgba(2, 6, 23, 0.28);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -562,6 +584,10 @@ h4 {
   font-weight: 800;
 }
 
+/* =========================================================
+   DETALLE VIAJE
+========================================================= */
+
 .trip-detail-page {
   display: grid;
   gap: 0.75rem;
@@ -581,7 +607,10 @@ h4 {
   min-height: 108px;
   border-radius: 1.15rem;
   padding: 0.95rem 1.05rem;
-  background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.16), transparent 16rem), linear-gradient(135deg, rgba(20, 184, 166, 0.14), rgba(56, 189, 248, 0.08)), rgba(15, 23, 42, 0.84);
+  background:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.16), transparent 16rem),
+    linear-gradient(135deg, rgba(20, 184, 166, 0.14), rgba(56, 189, 248, 0.08)),
+    rgba(15, 23, 42, 0.84);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -702,7 +731,9 @@ h4 {
 }
 
 .quest-form-grid {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
 }
 
 .quest-notes-field {
@@ -731,37 +762,14 @@ h4 {
   font-size: 1.18rem;
 }
 
-.quest-log-subtitle {
-  max-width: 720px;
-  color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.35;
-  margin: 0.3rem 0 0;
-}
-
-.quest-log-counter {
-  flex: 0 0 auto;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-  border-radius: 999px;
-  padding: 0.35rem 0.6rem;
-  background: rgba(2, 6, 23, 0.22);
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 850;
-}
-
-.quest-log-toolbar {
-  display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(160px, 0.45fr) minmax(160px, 0.45fr);
-  gap: 0.65rem;
-  margin-bottom: 0.8rem;
+.quest-log-header select {
+  width: min(210px, 100%);
 }
 
 .quest-empty-state {
   min-height: 150px;
   display: grid;
   place-items: center;
-  gap: 0.55rem;
   text-align: center;
   color: var(--muted);
   border: 1px dashed rgba(148, 163, 184, 0.22);
@@ -774,7 +782,7 @@ h4 {
 }
 
 .quest-empty-state p {
-  margin: 0;
+  margin: 0.3rem 0 0;
   font-size: 0.86rem;
 }
 
@@ -786,63 +794,30 @@ h4 {
 .detail-quest-card {
   border-left-width: 5px;
   border-radius: 1rem;
-  padding: 0.85rem;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.06), transparent), rgba(2, 6, 23, 0.24);
+  padding: 0.8rem;
+  background:
+    linear-gradient(135deg, rgba(34, 197, 94, 0.06), transparent),
+    rgba(2, 6, 23, 0.24);
 }
 
 .detail-quest-top {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.8rem;
-  align-items: flex-start;
-}
-
-.detail-quest-main {
-  min-width: 0;
-}
-
-.quest-card-meta-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-bottom: 0.35rem;
-}
-
-.quest-category-pill,
-.quest-state-pill {
-  display: inline-flex;
-  width: fit-content;
-  border-radius: 999px;
-  padding: 0.22rem 0.48rem;
-  font-size: 0.68rem;
-  font-weight: 850;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.8rem;
 }
 
 .quest-category-pill {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 0.35rem;
+  border-radius: 999px;
+  padding: 0.22rem 0.48rem;
   background: rgba(56, 189, 248, 0.11);
   color: #bae6fd;
   border: 1px solid rgba(56, 189, 248, 0.18);
-}
-
-.quest-state-pill {
-  background: rgba(148, 163, 184, 0.12);
-  color: #e2e8f0;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-}
-
-.quest-state-pill.state-main {
-  background: rgba(34, 197, 94, 0.13);
-  border-color: rgba(34, 197, 94, 0.28);
-}
-
-.quest-state-pill.state-evaluating {
-  background: rgba(234, 179, 8, 0.13);
-  border-color: rgba(234, 179, 8, 0.28);
-}
-
-.quest-state-pill.state-abandoned {
-  background: rgba(239, 68, 68, 0.12);
-  border-color: rgba(239, 68, 68, 0.25);
+  font-size: 0.68rem;
+  font-weight: 850;
 }
 
 .detail-quest-card h4 {
@@ -881,30 +856,18 @@ h4 {
   color: #e2e8f0 !important;
 }
 
-.quest-card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 0.75rem;
-  margin-top: 0.7rem;
-}
-
 .detail-quest-link {
   display: inline-flex;
+  margin-top: 0.65rem;
   font-weight: 850;
   color: var(--cyan);
-}
-
-.quest-no-link {
-  color: var(--muted);
-  font-size: 0.8rem;
 }
 
 .detail-state-actions {
   display: flex;
   gap: 0.35rem;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  margin-top: 0.65rem;
 }
 
 .state-button {
@@ -973,11 +936,20 @@ h4 {
 }
 
 .main-budget {
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), transparent), rgba(2, 6, 23, 0.24);
+  background:
+    linear-gradient(135deg, rgba(34, 197, 94, 0.12), transparent),
+    rgba(2, 6, 23, 0.24);
 }
 
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
 @media (max-width: 980px) {
-  .login-card,
+  .login-card {
+    grid-template-columns: 1fr;
+  }
+
   .trips-page {
     grid-template-columns: 1fr;
   }
@@ -995,15 +967,16 @@ h4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .budget-grid,
-  .quest-log-toolbar {
+  .budget-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 720px) {
   body {
-    background: radial-gradient(circle at top, rgba(34, 197, 94, 0.14), transparent 20rem), var(--bg);
+    background:
+      radial-gradient(circle at top, rgba(34, 197, 94, 0.14), transparent 20rem),
+      var(--bg);
   }
 
   .app-shell {
@@ -1048,11 +1021,7 @@ h4 {
     font-size: 1.8rem;
   }
 
-  .feature-grid,
-  .trip-form-grid,
-  .quest-form-grid,
-  .saved-trips-grid,
-  .quest-log-toolbar {
+  .feature-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1069,6 +1038,11 @@ h4 {
     padding: 0.85rem;
   }
 
+  .trip-form-grid,
+  .quest-form-grid {
+    grid-template-columns: 1fr;
+  }
+
   .create-trip-button,
   .add-quest-button,
   .detail-back-button,
@@ -1078,24 +1052,19 @@ h4 {
 
   .trips-saved-header,
   .quest-log-header,
-  .quest-card-footer {
+  .tab-panel-header {
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .detail-hero-card,
+  .detail-quest-top,
   .tab-panel-header,
   .saved-trip-card {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .detail-quest-top {
-    grid-template-columns: 1fr;
-  }
-
-  .detail-hero-meta,
-  .detail-state-actions {
+  .detail-hero-meta {
     justify-content: flex-start;
   }
 
@@ -1108,9 +1077,17 @@ h4 {
     flex: 1;
   }
 
+  .saved-trips-grid {
+    grid-template-columns: 1fr;
+  }
+
   .saved-trip-budget,
   .detail-quest-price {
     justify-items: start;
+  }
+
+  .quest-log-header select {
+    width: 100%;
   }
 }
 
@@ -1121,5 +1098,186 @@ h4 {
 
   h1 {
     font-size: 2.25rem;
+  }
+}
+
+
+/* =========================================================
+   EDIT / BUDGET / ITINERARY / DEALS EXTENSIONS
+========================================================= */
+
+.edit-quest-panel {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.inline-actions {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.danger-button {
+  min-height: 30px;
+  padding: 0.34rem 0.52rem;
+  font-size: 0.72rem;
+  background: rgba(239, 68, 68, 0.14);
+  color: #fecaca;
+  border: 1px solid rgba(239, 68, 68, 0.26);
+}
+
+.budget-summary-card {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 1rem;
+  padding: 0.85rem;
+  margin-bottom: 0.75rem;
+  background:
+    linear-gradient(135deg, rgba(56, 189, 248, 0.1), transparent),
+    rgba(2, 6, 23, 0.24);
+}
+
+.budget-summary-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.budget-summary-card strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.budget-ok {
+  color: #86efac;
+  margin: 0.45rem 0 0;
+  font-size: 0.86rem;
+}
+
+.budget-over {
+  color: #fecaca;
+  margin: 0.45rem 0 0;
+  font-size: 0.86rem;
+}
+
+.budget-category-list {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.budget-category-list h4 {
+  margin: 0 0 0.15rem;
+  font-size: 0.95rem;
+}
+
+.budget-category-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 0.75rem;
+  padding: 0.55rem 0.65rem;
+  background: rgba(2, 6, 23, 0.18);
+}
+
+.budget-category-row span {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.budget-category-row strong {
+  font-size: 0.84rem;
+}
+
+.itinerary-form-grid,
+.deal-form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.deal-form-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.itinerary-form-grid label,
+.deal-form-grid label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.itinerary-form-grid label span,
+.deal-form-grid label span {
+  color: rgba(203, 213, 225, 0.78);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.itinerary-form-grid input,
+.itinerary-form-grid select,
+.deal-form-grid input,
+.deal-form-grid select {
+  min-height: 39px;
+  padding: 0.53rem 0.65rem;
+  border-radius: 0.7rem;
+  font-size: 0.87rem;
+}
+
+.simple-list {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+}
+
+.simple-list-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: flex-start;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 0.95rem;
+  padding: 0.8rem;
+  background: rgba(2, 6, 23, 0.24);
+}
+
+.simple-list-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.simple-list-card h4 {
+  margin: 0 0 0.2rem;
+  font-size: 0.98rem;
+}
+
+.simple-list-card p {
+  color: var(--muted);
+  font-size: 0.83rem;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 980px) {
+  .itinerary-form-grid,
+  .deal-form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .itinerary-form-grid,
+  .deal-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .simple-list-card,
+  .budget-category-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
